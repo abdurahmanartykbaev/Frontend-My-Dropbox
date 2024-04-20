@@ -1,0 +1,82 @@
+body {
+  color: #444;
+  font: 100%/30px "Helvetica Neue", helvetica, arial, sans-serif;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-size: large;
+}
+
+table {
+  background: rgb(0, 0, 0);
+  border-collapse: separate;
+  box-shadow: inset 0 1px 0 #fff;
+  font-size: 12px;
+  margin: 30px auto;
+  text-align: left;
+  width: 90%;
+}
+table .folder{
+  cursor: pointer;
+}
+table a {
+  width: 100%;
+  text-decoration: none;
+  color: #000000;
+  display: block;
+}
+td {
+  padding: 10px 15px;
+  position: relative;  
+}
+
+td:first-child {
+  width: 81%;
+  
+}
+
+td:last-child {
+  position: relative;
+}
+
+tr td {
+  background: #52baff;
+}
+
+.fileTable .icons {
+  gap: 30px;
+  position: absolute;
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 8px;
+  border-radius: 5px;
+  visibility: hidden;  
+  opacity: 0;
+  transition: 0.5s ease;
+  > span {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+.fileTable .elipsis {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+
+}
+.fileTable .icons.active {
+  visibility: visible;
+  opacity: 1;
+  z-index:99
+}
+.fileTable .icons svg {
+  cursor: pointer;
+  font-size: 1rem;
+}
